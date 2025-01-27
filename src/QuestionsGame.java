@@ -3,6 +3,8 @@
 // You should delete this comment and replace it with your class
 // header comment.
 import java.util.Scanner;
+import java.io.PrintStream;
+
 public class QuestionsGame 
 {
     // Your code here
@@ -37,6 +39,10 @@ public class QuestionsGame
     			
     }
     public void saveQuestions(PrintStream output)
+    {
+    	
+    }
+    public void play()
     {
     	
     }
