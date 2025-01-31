@@ -1,6 +1,6 @@
 // This is a starter file for QuestionsGame.
 //
-// You should delete this comment and replace it with your class
+// QuestionsGame.java
 // header comment.
 import java.util.Scanner;
 import java.io.PrintStream;
@@ -103,15 +103,17 @@ public class QuestionsGame
     }
     public void play()//going through the tree, yes=left and no=right until we hit a leaf
     {
-    	String currentLine = "";
-    	if(console.nextLine().trim().toLowerCase().startsWith("y"))
-		{
-			overallRoot.left = new QuestionNode(currentLine);
-		}
-		else
-		{
-			overallRoot.right = new QuestionNode(currentLine);
-		}
+    	while(overallRoot.left != null && overallRoot.right != null)
+    	{
+    		if(console.nextLine().equals("y"))
+    		{
+    			overallRoot = overallRoot.left;
+    		}
+    		else
+    		{
+    			overallRoot = overallRoot.right;
+    		}
+    	}
     }
     
     static class QuestionNode 
