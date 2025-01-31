@@ -21169,7 +21169,8 @@ orca (whale)
 A:
 humpback whale
 Q:
-Is it related to the bottle nosed dolphin?
+Is it related to the bottle nosed dol
+phin?
 Q:
 Is it related to the whale family?
 Q:

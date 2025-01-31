@@ -16,6 +16,7 @@ public class questionTreeTester
 
         Scanner file = new Scanner(new File("spec-questions.txt"));
         QuestionsGame theTree = new QuestionsGame(file);
+        
         printer.printPreOrder(System.out, theTree.overallRoot); 
     }
 }
